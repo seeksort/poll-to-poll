@@ -1,0 +1,28 @@
+/*
+========== Main ==========
+*/
+
+.brand-logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#intro {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn,
+.btn-large {
+    background-color: #283593;
+}
+
+.btn:hover,
+.btn-large:hover {
+    background-color: #5c6bc0;
+}
+
+.secondary-content {
+    color: #283593;
+}
+.secondary-content:hover {
+    color: #5c6bc0;
+}
