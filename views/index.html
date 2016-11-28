@@ -22,8 +22,8 @@
         <div class="container nav-wrapper">
             <a href="#" class="brand-logo pink-text text-lighten-4">Poll to Poll</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="signup.html">Sign Up</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><a href="#modal1">Sign Up</a></li>
+                <li><a href="#modal2">Log In</a></li>
             </ul>
         </div>
     </nav>
@@ -37,7 +37,7 @@
                 <p class="valign">
                     <br>
                     <br>
-                    <a class="waves-effect waves-light btn-large main-btns">Sign Up</a>
+                    <a class="waves-effect waves-light btn-large main-btns" href="#modal1">Sign Up</a>
                 </p>
             </div>
         </div>
@@ -56,12 +56,72 @@
             </div>
         </div>
     </div>
+    
+
+    <!-- Modal - Sign Up -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Sign Up</h4>
+            <form>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Modal - Log In -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Log In</h4>
+            <form>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
     <!-- jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <!-- Materialize.js -->
     <script type="text/javascript" src="../public/materialize.min.js"></script>
     <!-- JavaScript -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript">
+        // jQuery modal animation trigger
+          $(document).ready(function(){
+            $('.modal').modal();
+          });
+    </script>
 </body>
 
 </html>
